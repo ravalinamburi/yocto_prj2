@@ -1,0 +1,11 @@
+name: Starter workflow
+on:
+  workflow_dispatch:
+jobs:
+  call-workflow-using-releasetag:
+    uses: ravalinamburi/common_scripts/.github/workflows/resuable-workflow.yml@v1
+  call-workflow-using-branch:
+    uses: ravalinamburi/common_scripts/.github/workflows/resuable-workflow.yml@main
+  call-workflow-using-commitsha:
+    uses: ravalinamburi/common_scripts/.github/workflows/resuable-workflow.yml@62032de9fb668e14ab96822dd58b29ae4b698df6
+  
